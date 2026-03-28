@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Exo:wght@300;500;700&display=swap");
+
+/*------------------------------------------------Variables*/
+:root {
+    --navy: #002366;
+    --slate: #4A5B6D;
+    --accent: #D4AF37;
+    --white: #ffffff;
+    --light-bg: #F8FAFC;
+}
+
+/*------------------------------------------------Colors*/
+.bg-color-name-title { background-color: var(--navy); }
+.ui-menu-color-home { background-color: #001A4D; }
+.ui-menu-color-resume { background-color: #002366; }
+.ui-menu-color-contact { background-color: #1A3673; }
+.ui-menu-color-interests { background-color: #334980; }
+.ui-menu-color-reviews { background-color: #4D5C8C; }
+
+/*------------------------------------------------Base Styles*/
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    color: #1A202C;
+}
+
+.uppercase { text-transform: uppercase; letter-spacing: 1px; }
+
+/*------------------------------------------------Header & Photo*/
+.logo {
+    background: url("../images/salome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.heading {
+    padding: 60px 40px;
+    color: var(--white);
+}
+
+.name { font-family: 'Exo', sans-serif; font-weight: 700; font-size: 38px; margin: 0; }
+.title { font-weight: 300; font-size: 20px; color: #CBD5E0; }
+
+#nav {
+    display: flex !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menuitem {
+    flex: 1 0 20%; /* 5 items = 20% each */
+    height: 100px;
+}
+
+.menuitem a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.menuitem a:hover { background: rgba(255, 255, 255, 0.1); }
+.menuitem a i { font-size: 20px; margin-bottom: 5px; }
+.menuitem span { font-size: 10px; font-weight: 600; text-transform: uppercase; }
+
+/*------------------------------------------------Consultancy Section*/
+.section-column {
+    background-color: var(--white);
+    padding: 60px 50px;
+    border-radius: 8px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+.section-heading {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.three-reasons-icon { font-size: 28px; color: var(--navy); }
+.three-reasons-heading { color: var(--navy); font-weight: 700; font-size: 1rem; }
+.ecosystem-links a { color: var(--navy); text-decoration: none; font-weight: 500; }
+.ecosystem-links a:hover { color: var(--accent); }
+
+/*------------------------------------------------Buttons*/
+#button {
+    background-color: var(--accent);
+    color: var(--navy);
+    border: none;
+    padding: 12px 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#button:hover { background-color: var(--navy); color: var(--white); }
+
+/*------------------------------------------------Footer*/
+footer { background: var(--navy); color: #CBD5E0; padding: 30px 0; font-size: 12px; }
+.social-links a i { color: var(--accent); font-size: 20px; }
+
+/*------------------------------------------------Responsive*/
+@media (max-width: 992px) {
+    #nav { flex-wrap: wrap; }
+    .menuitem { flex: 1 0 33.33%; }
+}
