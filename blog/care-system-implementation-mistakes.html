@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Common mistakes when implementing a new care management or rostering system, and how to avoid them.">
+    <title>Common Mistakes When Implementing a New Care System | Salome Lamprecht</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        body { background-color: #f4f4f4; }
+        .main-content-box {
+            background-color: #fff;
+            padding: 40px;
+            min-height: 80vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        .post-category {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 10px;
+            display: block;
+        }
+        .post-title {
+            color: var(--navy);
+            font-family: 'Exo', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+        .post-meta {
+            font-size: 0.8rem;
+            color: #9AA5B4;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #EDF2F7;
+        }
+        .post-body {
+            font-size: 0.95rem;
+            line-height: 1.85;
+            color: #2D3748;
+        }
+        .post-body p { margin-bottom: 1.4rem; }
+        .post-body h4 {
+            color: var(--navy);
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+        .post-footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #EDF2F7;
+        }
+        .back-link {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .back-link:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <header class="container-fluid p-0">
+        <div class="row g-0 d-flex align-items-stretch">
+            <div class="col-lg-4 logo"></div>
+            <div class="col-lg-8 d-flex flex-column">
+                <div class="bg-color-name-title heading flex-grow-1">
+                    <h1 class="name uppercase">Salome Lamprecht</h1>
+                    <h2 class="title">Care Sector Data, Reporting & Compliance Consultant</h2>
+                </div>
+                <nav>
+                    <ul id="nav">
+                        <li class="menuitem ui-menu-color-home"><a href="../index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                        <li class="menuitem ui-menu-color-resume"><a href="../resume.html"><i class="fa fa-graduation-cap"></i><span>Experience</span></a></li>
+                        <li class="menuitem ui-menu-color-contact"><a href="../contact.html"><i class="fa fa-address-book"></i><span>Contact</span></a></li>
+                        <li class="menuitem ui-menu-color-reviews"><a href="../reviews.html"><i class="fa fa-comment"></i><span>Testimonials</span></a></li>
+                        <li class="menuitem ui-menu-color-resume"><a href="../blog.html"><i class="fa fa-pen"></i><span>Blog</span></a></li>
+                        <li class="menuitem ui-menu-color-interests"><a href="../interests.html"><i class="fa fa-users"></i><span>Interests</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-12 main-content-box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+
+                            <a href="../blog.html" class="back-link"><i class="fa fa-arrow-left me-1"></i> Back to Blog</a>
+
+                            <div class="mt-4">
+                                <span class="post-category">Systems Implementation</span>
+                                <h2 class="post-title">Common Mistakes When Implementing a New Care System</h2>
+                                <p class="post-meta"><i class="fa fa-calendar me-1"></i> March 2026 &nbsp;|&nbsp; Salome Lamprecht</p>
+                            </div>
+
+                            <div class="post-body">
+
+                                <p>Implementing a new care management or rostering system is exciting. It promises better visibility, less admin, and smoother operations.</p>
+
+                                <p>But in my experience of implementing systems across dozens of care branches, the same mistakes come up time and time again, and they are almost always avoidable.</p>
+
+                                <h4>1. Rushing the data migration</h4>
+                                <p>The data you bring across from your old system is the foundation of everything. If it is messy, incomplete, or incorrectly mapped, your new system will cause more problems than it solves from day one. Take the time to clean and validate your data before you go live, not after.</p>
+
+                                <h4>2. Going live without proper training</h4>
+                                <p>Switching on a system and hoping staff figure it out is a recipe for workarounds, errors, and frustration. Your office staff, your field carers, and your managers all use the system differently and they each need appropriate support. A one-size-fits-all training session is rarely enough.</p>
+
+                                <h4>3. Not configuring the system to your workflows</h4>
+                                <p>Every care organisation works slightly differently. A system that has not been configured to reflect how your team actually operates will be fought against rather than embraced. Time spent on configuration before go-live saves a great deal of time and frustration afterwards.</p>
+
+                                <h4>4. Forgetting about reporting</h4>
+                                <p>Most care providers focus on getting the operational side working and treat reporting as an afterthought. But if your reports are not set up correctly from the start, you will be making decisions based on incomplete or inaccurate data. Good reporting should be part of the implementation plan, not something bolted on at the end.</p>
+
+                                <p>If you are planning a system implementation and want to get it right first time, feel free to get in touch. I have helped care organisations of all sizes navigate this process and I would be glad to help.</p>
+
+                            </div>
+
+                            <div class="post-footer d-flex justify-content-between align-items-center">
+                                <a href="../blog.html" class="back-link"><i class="fa fa-arrow-left me-1"></i> Back to Blog</a>
+                                <a href="../contact.html" id="button">Get In Touch</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid py-4">
+        <div class="container text-center">
+            <p class="mb-0 uppercase small">© 2026 Salome Lamprecht | Care Sector Data & Compliance Consultant</p>
+            <div class="social-links mt-2">
+                <a href="https://linkedin.com/in/salomelamprecht/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
